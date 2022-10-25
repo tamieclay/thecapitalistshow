@@ -1,0 +1,164 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>The Capitalist Show</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>TheCapitalistShow</h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <box-icon name='menu' color="whitesmoke" size="lg" id="menu"></box-icon>
+        </nav>
+        <div class="header-content">
+            <h1>Here is your chance to win a Million Rands</h1>
+            <p>A new reality television show is about to hit the screens and you have a chance to participate.
+                If you want to start a business or are looking for funding to build the next innovative product..then
+                 This is your chance!!!
+                </p>
+            <form action='' method='POST'> {% csrf_token %}
+                <input type="text" placeholder="Enter your Name" name='name'>
+                <input type="email" placeholder="Enter your email" name='email'>
+                <input type="text" placeholder="Enter your Number" name='number'>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </header>
+    <section class="about">
+        <div class="row">
+            <div class="about-left">
+                <h2>The TheCapitalistShow is all about excellence in the world of business</h2>
+                <img src="{% static 'images/capitalist.jpg' %}" alt="">
+            </div>
+            <div class="about-middle">
+                <h2>Business Reality Television</h2>
+                <p>Business Reality Television is a popular type of television programming that features businesses or entrepreneurs
+                     competing against each other in various challenges
+                </p>
+                <p>These programs can be found on channels like ABC, CBS, and NBC, and often feature well-known businesses or entrepreneurs</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+            <div class="about-right">
+                <h2>Why & Join</h2>
+                <p>The challenges are often creative in nature and are meant to test the participants' business skills. The winner of each challenge is usually awarded a cash prize, 
+                    and the loser is typically eliminated from the competition.
+                </p>
+                <p>Joining a Business Reality Television show can be a great way to gain exposure for your business, 
+                    as well as to improve your business skills..</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+<!-- About 2 -->
+<section class="about2">
+    <div class="row">
+        <div class="about2-left">
+            <h2>Reaity Television Show</h2>
+            <h1>How to Win</h1>
+            <p>Every year, there are a few Reality Television Shows that take the world by storm.
+                 Everyone watches them, talks about them, and forms strong opinions about the participants. 
+                 The people who are on these shows are typically very extroverted, very confident,
+                  and very good at working with other people. In order to be successful on a
+                   Reality Television Show, it is important to be able to work well with other people
+                    and to be able to think on your feet.
+
+            </p>
+            <p>Business reality television shows can be a great way to get your business noticed.  In many cases, the show’s 
+                winner can receive a lot of valuable exposure and help increase sales.</p>
+            <p>There are a few things you will need in order to compete: a strong business plan,
+                 a skilled team, and the financial resources to back your efforts..</p>
+
+        </div>
+        <div class="about2-right">
+            <div class="row">
+                <div class="card">
+                    <box-icon type='solid' name='building-house' color="#4CAF50" size="60px"></box-icon>
+                    <h2>The Capitalist  House</h2>
+                </div>
+                <div class="card">
+                    <box-icon type='solid' name='business' color="#4CAF50" size="60px"></box-icon>
+                    <h2>The Challenge Mantra</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card">
+                    <box-icon type='solid' name='dice-5'color="#4CAF50" size="60px"></box-icon>
+                    <h2>The Game Commences</h2>
+                </div>
+                <div class="card">
+                    <box-icon name='money-withdraw' color="#4CAF50" size="60px"></box-icon>
+                    <h2>The Winner Collects</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- process -->
+<section class="process">
+    <div class="row">
+        <h1>What is our Process</h1>
+    </div>
+    <div class="row">
+        <div class="process-content">
+            <div class="progress-bar">
+                <div class="c1"></div>
+                <div class="c2"></div>
+                <div class="c3"></div>
+            </div>
+            <div class="row">
+                <div class="box1">
+                    <h2>One</h2>
+                    <p>Register with your name,email and phone number. This gives you the opportunity to be added to the applicants database</p>
+                </div>
+                <div class="box2">
+                    <h2>Two</h2>
+                    <p>Once you are in the system you will receive communication.This can be via sms or email. 
+                        You will then receive a link to login to an 
+                        applicants portal where you will be expected 
+                        to take a few tests to  check your aligibility</p>
+                </div>
+                <div class="box3">
+                    <h2>Three</h2>
+                    <p>If successful you will be notified in your portal and via sms . 
+                        Further instructions will follow.
+                         You will be expected to sign an NDA and arrive at 
+                         the Business House and be prepped for shooting        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <p>Made by <box-icon name='heart' type='solid' color='whitesmoke'></box-icon>Diseno</p>
+</footer>
+
+<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+<script src="{% static 'js/app.js' %}"></script>
+</body>
+
+</html>
+
+
